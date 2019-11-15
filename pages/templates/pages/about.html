@@ -1,0 +1,63 @@
+
+{% extends "pages/base.html "%}
+{% block content %}
+<h1>ABawt</h1>
+<a href="{% url 'login' %}">Login</a>
+
+{% for p in phil %}
+<div class = "contents-section">
+  <div class = "media">
+    <img class "rounded-circle account-img" src="{{image.photo.url}}" alt="">
+    <div class ="media-body">
+      <h1>{{p.title}}</h1>
+      <p>{{p.content}}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% for mis in mis %}
+<div class = "contents-section">
+  <div class = "media">
+    <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+    <div class ="media-body">
+      <h1>{{mis.title}}</h1>
+      <p>{{mis.content}}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% for vis in vis %}
+<div class = "contents-section">
+  <div class = "media">
+    <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+    <div class ="media-body">
+      <h1>{{vis.title}}</h1>
+      <p>{{vis.content}}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% for vir in vir %}
+<div class = "contents-section">
+  <div class = "media">
+    <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+    <div class ="media-body">
+      <h1>{{vir.title}}</h1>
+      <p>{{vir.content}}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% for pray in pray %}
+<div class = "contents-section">
+  <div class = "media">
+    <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+    <div class ="media-body">
+      <h1>{{pray.title}}</h1>
+      <p>{{pray.content}}</p>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+{% endblock content %}

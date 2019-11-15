@@ -1,0 +1,78 @@
+
+{% extends "pages/base.html "%}
+
+{% block content %}
+<h1>ABawt</h1>
+<a href="{% url 'login' %}">Login</a>
+
+<div class="grid_8 alpha">
+    {% for p in p %}
+    <div class = "contents-section">
+      <div class = "media">
+        <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+        <div class ="media-body">
+          <h3>{{p.title}}</h3>
+          <p>{{p.content}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="grid_8 alpha">
+    {% for m in m %}
+    <div class = "contents-section">
+      <div class = "media">
+        <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+        <div class ="media-body">
+          <h3>{{m.title}}</h3>
+          <p>{{m.content}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="grid_8 alpha">
+    {% for c in c %}
+    <div class = "contents-section">
+      <div class = "media">
+        <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+        <div class ="media-body">
+          <h3>{{c.name}}</h3>
+          <p>{{c.position}}</p>
+          <p>{{c.social_media}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="grid_8 alpha">
+    {% for e in e %}
+    <div class = "contents-section">
+      <div class = "media">
+        <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+        <div class ="media-body">
+          <h3>{{e.title}}</h3>
+          <p>{{e.content}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="grid_8 omega">
+
+    {% for d in d %}
+    <div class = "contents-section">
+      <div class = "media">
+        <img class "rounded-circle account-img" src="{{Philosophy.image.url}}" alt="">
+        <div class ="media-body">
+          <h3>{{d.title}}</h3>
+          <p>{{d.content}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock content %}
